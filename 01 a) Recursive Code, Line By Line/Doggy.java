@@ -9,6 +9,10 @@
  *		return result;
  *	}
  *
+ * My answer:-
+ * The if statement is after the recursion and so therefore it is never
+ * reached and it loops forever. It is fixed by bringing forward the if
+ * statement.
  */
 
 public class Doggy {
@@ -19,14 +23,14 @@ public class Doggy {
 	}
 	
 	public void Launch() {
-		System.out.println(doggyMethod(5));
+		System.out.println(doggyMethod(10));
 	}
 	
 	String doggyMethod(int n) {
-		String result = doggyMethod(n - 3) + n + doggyMethod(n - 2);
 		if(n <= 0) {
 			return "";
 		}
+		String result = doggyMethod(n - 3) + n + doggyMethod(n - 2);
 		return result;
 	}
 

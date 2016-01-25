@@ -22,7 +22,9 @@ public class McCarthy {
 	}
 	
 	public void Launch() {
-		System.out.println(mcCarthy91(5));
+		System.out.println(mcCarthy91(50));
+		System.out.println(mcCarthy91(73));
+		System.out.println(mcCarthy91(95));
 	}
 	
 	int mcCarthy91(int n) {
